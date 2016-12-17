@@ -5,7 +5,7 @@ services:
 
 before_install:
   - docker pull mysql
-  - docker run --name my-sql-db -e MYSQL_DATABASE=restaurant, MYSQL_USER=root, MYSQL_PASSWORD=1111
+  - docker run --name my-sql-db -e MYSQL_DATABASE=restaurant
   - docker build -t restaurant
 
 language: java
