@@ -27,7 +27,7 @@ public class UserServiceIntegrationTest extends AbstractTransactionalJUnit4Sprin
 
     @Before
     public void addUsers() {
-        jdbcTemplate.update("INSERT INTO USER VALUES(?, ?, ?)", 1L, "Jack", "White");
+        jdbcTemplate.update("INSERT INTO User VALUES(?, ?, ?)", 1L, "Jack", "White");
     }
 
     @Test
