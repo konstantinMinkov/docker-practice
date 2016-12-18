@@ -5,7 +5,7 @@ services:
   - mysql
 
 env:
-  - MYSQL_HOST=127.0.0.1 MYSQL_USER=root MYSQL_PASSWORD=1111
+  - MYSQL_HOST=127.0.0.1
 
 before_install:
 #  - docker pull mysql
