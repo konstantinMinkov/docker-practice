@@ -11,7 +11,7 @@ before_install:
 #  - docker pull mysql
   - mysql -e 'CREATE DATABASE IF NOT EXISTS restaurant;'
 #  - docker run --name my-sql-db -e MYSQL_DATABASE=restaurant
-  - docker build -t restaurant .
+#  - docker build -t restaurant .
 
 language: java
 
