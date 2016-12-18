@@ -8,7 +8,7 @@ services:
 #  - MYSQL_HOST=127.0.0.1
 
 before_install:
-  - docker run -p 3307:3306 --detach --name=mysql-db --env="MYSQL_ROOT_PASSWORD=1111" mysql
+  - docker run -p 3306:3307 --detach --name=mysql-db --env="MYSQL_ROOT_PASSWORD=1111" mysql
   - docker inspect mysql-db
   - docker build -t restaurant .
 #  - docker pull mysql
