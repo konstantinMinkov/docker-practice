@@ -9,6 +9,7 @@ services:
 
 before_install:
   - docker run -p 3307:3306 --detach --name=mysql-db --env="MYSQL_ROOT_PASSWORD=1111" mysql
+  - docker inspect mysql-db
   - docker build -t restaurant .
 #  - docker pull mysql
 #  - mysql -e 'CREATE DATABASE IF NOT EXISTS restaurant;'
