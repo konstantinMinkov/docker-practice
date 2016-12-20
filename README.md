@@ -1,8 +1,8 @@
 # Steps to run application
 
-## Build Docker image 
+### Build Docker image 
 
-> docker build -t restaurant .
+`docker build -t restaurant .`
 
 ## Run image 
 
