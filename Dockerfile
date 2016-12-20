@@ -1,1 +1,2 @@
-FROM maven:3.3-jdk-8-onbuild
+FROM jetty:9.3.12
+ADD ./target/*.war /var/lib/jetty/webapps/ROOT.war
