@@ -1,18 +1,27 @@
 # Steps to run application
 
+### Required tools
+
+* maven 3.3.9
+* docker
+
+### Build project
+
+Run `mvn clean install` in the root folder of the project
+
 ### Build Docker image 
 
 `docker build -t restaurant .`
 
-## Run image 
+### Run image 
 
-> docker run -p 8080:8080 -it restaurant mvn jetty:run
+`docker run -p 8080:8080 -it restaurant`
 
-## See your Docker machine IP 
+### See your Docker machine IP 
 
-> docker-machine ip default
+`docker-machine ip default`
 
-## Open app in browser 
+### Open app in browser 
 
 Simply type 
 
